@@ -28,8 +28,7 @@
         </Grid.ColumnDefinitions>
         <Label Grid.Row="0" Grid.ColumnSpan="4" Content="{Binding Result}"/>
 
-        <TextBox x:Name="SResult"
-            IsReadOnly="True"
+        <Label
             Grid.Row="0"
             Grid.ColumnSpan="4"
             Grid.Column="0"
@@ -37,177 +36,196 @@
             FontSize="32"
             Foreground="LightGreen"
             Background="Green"
-            >0</TextBox>
+            Content ="{Binding SResult}"/>
 
         <!--Number Buttons-->
-        <Button x:Name="seven"
+        <Button
             Grid.Row="2"
             Grid.Column="0"
             Margin="7, 7, 7, 7"
             FontSize="17"
             Foreground="White"
-            Background="Gray" Click="seven_Click"
+            Background="Gray"
+            Command="{Binding seven_PressedCommand}"
             >7</Button>
 
-        <Button x:Name="eight"
+        <Button
             Grid.Row="2"
             Grid.Column="1"
             Margin="7, 7, 7, 7"
             FontSize="17"
             Foreground="White"
-            Background="Gray" Click="eight_Click"
+            Background="Gray" 
+            Command="{Binding eight_PressedCommand}"
             >8</Button>
 
-        <Button x:Name="nine"
+        <Button
             Grid.Row="2"
             Grid.Column="2"
             Margin="7, 7, 7, 7"
             FontSize="17"
             Foreground="White"
-            Background="Gray" Click="nine_Click"
+            Background="Gray"
+            Command="{Binding nine_PressedCommand}"
             >9</Button>
 
-        <Button x:Name="four"
+        <Button
             Grid.Row="3"
             Grid.Column="0"
             Margin="7, 7, 7, 7"
             FontSize="17"
             Foreground="White"
-            Background="Gray" Click="four_Click"
+            Background="Gray"
+            Command="{Binding four_PressedCommand}"
             >4</Button>
 
-        <Button x:Name="five"
+        <Button
             Grid.Row="3"
             Grid.Column="1"
             Margin="7, 7, 7, 7"
             FontSize="17"
             Foreground="White"
-            Background="Gray" Click="five_Click"
+            Background="Gray"
+            Command="{Binding five_PressedCommand}"
             >5</Button>
 
-        <Button x:Name="six"
+        <Button
             Grid.Row="3"
             Grid.Column="2"
             Margin="7, 7, 7, 7"
             FontSize="17"
             Foreground="White"
-            Background="Gray" Click="six_Click"
+            Background="Gray"
+            Command="{Binding six_PressedCommand}"
             >6</Button>
 
-        <Button x:Name="one"
+        <Button
             Grid.Row="4"
             Grid.Column="0"
             Margin="7, 7, 7, 7"
             FontSize="17"
             Foreground="White"
-            Background="Gray" Click="one_Click"
+            Background="Gray"
+            Command="{Binding one_PressedCommand}"
             >1</Button>
 
-        <Button x:Name="two"
+        <Button
             Grid.Row="4"
             Grid.Column="1"
             Margin="7, 7, 7, 7"
             FontSize="17"
             Foreground="White"
-            Background="Gray" Click="two_Click"
+            Background="Gray" 
+            Command="{Binding two_PressedCommand}"
             >2</Button>
 
-        <Button x:Name="three"
+        <Button
             Grid.Row="4"
             Grid.Column="2"
             Margin="7, 7, 7, 7"
             FontSize="17"
             Foreground="White"
-            Background="Gray" Click="three_Click"
+            Background="Gray"
+            Command="{Binding three_PressedCommand}"
             >3</Button>
 
-        <Button x:Name="zero"
+        <Button
             Grid.Row="5"
             Grid.ColumnSpan="2"
             Grid.Column="0"
             Margin="7, 7, 7, 7"
             FontSize="17"
             Foreground="White"
-            Background="Gray" Click="zero_Click"
+            Background="Gray"
+            Command="{Binding zero_PressedCommand}"
             >0</Button>
         
         <!--Maths Buttons-->
-        <Button x:Name="divide"
+        <Button
             Grid.Row="1"
             Grid.Column="3"
             Margin="7, 7, 7, 7"
             FontSize="17"
             Foreground="White"
-            Background="Orange" Click="divide_Click"
+            Background="Orange"
+            Command="{Binding divide_PressedCommand}"
             >/</Button>
 
-        <Button x:Name="multiply"
+        <Button
             Grid.Row="2"
             Grid.Column="3"
             Margin="7, 7, 7, 7"
             FontSize="22"
             Foreground="White"
-            Background="Orange" Click="multiply_Click"
+            Background="Orange" 
+            Command="{Binding multiply_PressedCommand}"
             >*</Button>
 
-        <Button x:Name="minus"
+        <Button
             Grid.Row="3"
             Grid.Column="3"
             Margin="7, 7, 7, 7"
             FontSize="26"
             Foreground="White"
-            Background="Orange" Click="minus_Click"
+            Background="Orange"
+            Command="{Binding minus_PressedCommand}"
             >-</Button>
 
-        <Button x:Name="plus"
+        <Button
             Grid.Row="4"
             Grid.Column="3"
             Margin="7, 7, 7, 7"
             FontSize="26"
             Foreground="White"
-            Background="Orange" Click="plus_Click"
+            Background="Orange"
+            Command="{Binding plus_PressedCommand}"
             >+</Button>
 
-        <Button x:Name="equals"
+        <Button
             Grid.Row="5"
             Grid.Column="3"
             Margin="7, 7, 7, 7"
             FontSize="22"
             Foreground="White"
-            Background="Orange" Click="equals_Click"
+            Background="Orange" 
+            Command="{Binding equals_PressedCommand}"
             >=</Button>
         
-        <Button x:Name="dot"
+        <Button
             Grid.Row="5"
             Grid.Column="2"
             Margin="7, 7, 7, 7"
             FontSize="26"
             Foreground="White"
             Background="Gray"
+            Command="{Binding dot_PressedCommand}"
             >.</Button>
         
         <!--Clear Buttons-->
-        <Button x:Name="deleteE"
+        <Button
             Grid.Row="1"
             Grid.Column="0"
             Margin="7, 7, 7, 7"
             FontSize="17"
-            Background="LightBlue" Click="deleteAll_Click"
+            Background="LightBlue" 
+            Command="{Binding deleteE_PressedCommand}"
             >CE</Button>
 
-        <Button x:Name="delete"
+        <Button
             Grid.Row="1"
             Grid.Column="1"
             FontSize="17"
-            Margin="7, 7, 7, 7" Click="delete_Click"
+            Margin="7, 7, 7, 7"
+            Command="{Binding delete_PressedCommand}"
             >C</Button>
 
         <!--Positive and Negative Button-->
-        <Button x:Name="plusToMinus"
+        <Button 
             Grid.Row="1"
             Grid.Column="2"
             Margin="7, 7, 7, 7"
-            FontSize="17" Click="plusToMinus_Click"
+            FontSize="17"
+            Command="{Binding plusAndMinus_PressedCommand}"
             >+/-</Button>
     </Grid>
 </Window>
