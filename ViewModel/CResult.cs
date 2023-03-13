@@ -11,6 +11,6 @@ namespace Calculator.ViewModel
 {
     public partial class CResult : ObservableObject
     {
-        
+
     }
 }
